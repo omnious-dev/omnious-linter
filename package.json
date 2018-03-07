@@ -1,0 +1,36 @@
+{
+  "name": "omnious-linter",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Code style guide configs for Omnious.",
+  "homepage": "https://github.com/omnious-dev/omnious-linter",
+  "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
+  "contributors": [
+    {
+      "name": "Euihyun Yang",
+      "email": "ykd1217@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omnious-dev/omnious-linter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/omnious-dev/omnious-linter/issues"
+  },
+  "keywords": [
+    "omnious"
+  ],
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "lint": "lerna run lint",
+    "release": "lerna publish",
+    "prettier": "prettier --write packages/**/*.js"
+  }
+}
