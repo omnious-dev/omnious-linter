@@ -4,12 +4,11 @@
   "private": true,
   "description": "Code style guide configs for Omnious.",
   "license": "MIT",
-  "keywords": [
-    "omnious"
-  ],
+  "keywords": ["omnious"],
   "engines": {
     "node": ">= 8.9.0"
   },
+  "workspaces": ["packages/*"],
   "scripts": {
     "lint": "lerna run lint",
     "release": "lerna publish",
