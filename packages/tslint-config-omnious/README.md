@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/omnious-dev/tslint-config-omnious" title="TSLint Config Omnious">
+  <a href="https://github.com/omnious-dev/omnious-linter/tree/master/packages/tslint-config-omnious" title="TSLint Config Omnious">
     <img alt="TSLint Config Omnious" src="https://raw.githubusercontent.com/omnious-dev/i/master/omnious-logo.png" width="240px" />
   </a>
   <br />
@@ -25,9 +25,9 @@
 
 ```bash
 # NPM
-$ npm install -D typescript tslint tslint-config-omnious tslint-react
+$ npm install -D typescript tslint tslint-react tslint-config-omnious
 # Yarn
-$ yarn add -D typescript tslint tslint-config-omnious tslint-react
+$ yarn add -D typescript tslint tslint-react tslint-config-omnious
 ```
 
 ## Usage
@@ -43,4 +43,4 @@ $ yarn add -D typescript tslint tslint-config-omnious tslint-react
 
 ## License
 
-[MIT](https://github.com/omnious-dev/omnious-linter/blob/master/LICENSE) © [Omnious](http://www.omnious.com)
+[MIT](https://github.com/omnious-dev/omnious-linter/blob/master/LICENSE) © [Omnious](https://www.omnious.com)
