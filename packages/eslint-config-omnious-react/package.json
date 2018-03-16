@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-omnious-react",
-  "version": "0.4.0",
+  "version": "0.4.0-rc0",
   "description": "Extended Omnious's ESLint shareable config for React projects",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
   "contributors": [

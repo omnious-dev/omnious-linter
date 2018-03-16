@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-omnious",
-  "version": "0.1.3-rc1",
+  "version": "0.1.3-rc2",
   "description": "Extended Omnious's TSLint sharable config for React projects",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
   "contributors": [
