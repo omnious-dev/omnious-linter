@@ -13,13 +13,19 @@ module.exports = {
     // Enforces member ordering.
     'member-ordering': false,
     // Disallows usages of any as a type declaration.
-    'no-any': { severity: 'warning' },
+    'no-any': {
+      options: true,
+      severity: 'warning'
+    },
     // Forbids empty interfaces.
     'no-empty-interface': true,
     // Avoid import statements with side-effect.
     'no-import-side-effect': false,
     // Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.
-    'no-inferrable-types': true,
+    'no-inferrable-types': {
+      options: true,
+      severity: 'warning'
+    },
     // Disallows the use constant number values outside of variable assignments. When no list of allowed values is specified, -1, 0 and 1 are allowed by default.
     'no-magic-numbers': false,
     // Lint rules encode logic for syntactic & semantic checks of TypeScript source code.
