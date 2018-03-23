@@ -1,0 +1,16 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  font-size: 1rem;
+}
+
+.hello {
+  background-color: #333;
+
+  & .world {
+    display: flex;
+  }
+}

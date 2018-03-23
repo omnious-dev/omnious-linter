@@ -1,0 +1,11 @@
+{
+  "name": "stylelint-config-omnious",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "stylelint": "^9.1.3",
+    "stylelint-no-unsupported-browser-features": "^2.0.0",
+    "stylelint-scss": "^2.5.0"
+  }
+}

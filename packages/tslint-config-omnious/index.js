@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./rules/react'],
+  extends: ['./rules/eslint', './rules/react'],
   rules: {
     /**
      * TypeScript-specific
@@ -13,7 +13,7 @@ module.exports = {
     // Enforces member ordering.
     'member-ordering': false,
     // Disallows usages of any as a type declaration.
-    'no-any': true,
+    'no-any': { severity: 'warning' },
     // Forbids empty interfaces.
     'no-empty-interface': true,
     // Avoid import statements with side-effect.
@@ -115,7 +115,7 @@ module.exports = {
     // Ensures proper spacing between import statement keywords
     'import-spacing': true,
     // Requires interface names to begin with a capital ‘I’
-    'interface-name': [true, 'always-prefix'],
+    'interface-name': false,
     // Prefer an interface declaration over a type literal (type T = { ... })
     'interface-over-type-literal': true,
     // Enforces basic format rules for JSDoc comments.
