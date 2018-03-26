@@ -3,9 +3,16 @@
   "version": "1.0.0-rc2",
   "main": "index.js",
   "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^9.1.3",
+    "stylelint-no-unsupported-browser-features": "^2.0.0",
+    "stylelint-scss": "^2.5.0",
+    "stylelint-selector-bem-pattern": "^2.0.0"
+  },
   "peerDependencies": {
     "stylelint": "^9.1.3",
     "stylelint-no-unsupported-browser-features": "^2.0.0",
-    "stylelint-scss": "^2.5.0"
+    "stylelint-scss": "^2.5.0",
+    "stylelint-selector-bem-pattern": "^2.0.0"
   }
 }
