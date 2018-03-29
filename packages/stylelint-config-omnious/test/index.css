@@ -1,0 +1,40 @@
+html {
+  font-size: 15px;
+}
+
+body {
+  display: flex;
+  font-size: 1rem;
+}
+
+.hello {
+  background-color: #333;
+
+  & .world {
+    display: flex;
+    font-size: 1.556rem;
+    color: #fff;
+    color: white;
+    transition: all 0.02s;
+    margin: 15rem; top: 2;
+
+    .good {
+      color: black;
+
+      .nope {
+        color: white;
+      }
+    }
+
+    &:hover {
+
+    }
+  }
+}
+
+#foo {
+  & .bar {
+    .baz {
+    }
+  }
+}
