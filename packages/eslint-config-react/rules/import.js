@@ -91,7 +91,7 @@ module.exports = {
     // Ensure all imports appear before other statements
     'import/first': ['error', 'absolure-first'],
     // Ensure all exports appear after other statements
-    'import/exports-last': 'error',
+    'import/exports-last': 'off',
     // Report repeated import of the same module in multiple places
     'import/no-duplicates': 'error',
     // Report namespace imports
@@ -112,7 +112,7 @@ module.exports = {
       count: 2
     }],
     // Prefer a default export if module exports a single name
-    'import/prefer-default-export': 'warn',
+    'import/prefer-default-export': 'off',
     // Limit the maximum number of dependencies a module can have
     'import/max-dependencies': ['off', {
       max: 10

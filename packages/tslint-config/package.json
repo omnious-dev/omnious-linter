@@ -10,7 +10,7 @@
     }
   ],
   "license": "MIT",
-  "repository": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/tslint-config-omnious",
+  "repository": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/tslint-config",
   "keywords": [
     "omnious",
     "typescript",
@@ -22,18 +22,11 @@
     "jsx"
   ],
   "engines": {
-    "node": ">= 8.9.1"
+    "node": ">= 8.9.4"
   },
   "main": "index.js",
   "scripts": {
-    "lint": "tslint **/*.ts **/*.tsx"
-  },
-  "devDependencies": {
-    "tslint": "^5.9.1",
-    "tslint-eslint-rules": "^5.1.0",
-    "tslint-microsoft-contrib": "^5.0.3",
-    "tslint-react": "^3.5.1",
-    "typescript": "^2.7.2"
+    "lint": "tslint ."
   },
   "peerDependencies": {
     "tslint": "^5.9.1",

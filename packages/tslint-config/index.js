@@ -35,17 +35,7 @@ module.exports = {
       'allow-named-functions'
     ],
     // Requires type definitions to exist.
-    'typedef': [
-      true,
-      'call-signature',
-      'arrow-call-signature',
-      'parameter',
-      'property-declaration',
-      'variable-declaration',
-      'member-variable-declaration',
-      'object-destructuring',
-      'array-destructuring'
-    ],
+    'typedef': false,
     // Requires or disallows whitespace for type definitions.
     'typedef-whitespace': [true, {
       'call-signature': 'nospace',
