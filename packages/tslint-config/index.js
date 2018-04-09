@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./rules/eslint', './rules/react'],
+  extends: ['./rules/angular', './rules/eslint', './rules/react'],
   rules: {
     /**
      * TypeScript-specific

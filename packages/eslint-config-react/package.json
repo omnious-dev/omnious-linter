@@ -2,6 +2,7 @@
   "name": "eslint-config-omnious-react",
   "version": "0.4.0-rc6",
   "description": "Extended Omnious's ESLint shareable config for React projects",
+  "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config-react",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
   "contributors": [
     {
@@ -37,7 +38,7 @@
     "eslint-config-omnious": "^0.3.1"
   },
   "peerDependencies": {
-    "eslint": "^4.11.0",
+    "eslint": "^4.19.1",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.5.1"

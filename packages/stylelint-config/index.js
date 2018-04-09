@@ -1,8 +1,8 @@
 module.exports = {
   extends: [
-    './rules/scss',
     './rules/bem',
-    './rules/browser'
+    './rules/browser',
+    './rules/scss'
   ],
   rules: {
     /**
