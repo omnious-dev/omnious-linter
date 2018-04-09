@@ -1,6 +1,6 @@
 {
   "name": "tslint-config-omnious",
-  "version": "0.1.4-rc2",
+  "version": "0.1.4-rc3",
   "description": "Extended Omnious's TSLint sharable config for React projects",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
   "contributors": [
@@ -26,13 +26,14 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "tslint ."
+    "lint": "tslint -p ."
   },
   "peerDependencies": {
     "tslint": "^5.9.1",
+    "tslint-angular": "^1.1.1",
     "tslint-eslint-rules": "^5.1.0",
     "tslint-microsoft-contrib": "^5.0.3",
     "tslint-react": "^3.5.1",
-    "typescript": "^2.7.2"
+    "typescript": "^2.8.1"
   }
 }
