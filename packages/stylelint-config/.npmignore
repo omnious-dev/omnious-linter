@@ -1,2 +1,6 @@
 examples
+test
+.npmignore
 .stylelintrc
+CHANGELOG.md
+README.md
