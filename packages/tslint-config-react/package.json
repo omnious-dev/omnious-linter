@@ -1,8 +1,8 @@
 {
-  "name": "@omnious/tslint-config",
+  "name": "@omnious/tslint-config-react",
   "version": "0.0.1",
-  "description": "TSLint sharable config for the Omnious TypeScript style guide",
-  "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/tslint-config",
+  "description": "TSLint sharable config for the Omnious TypeScript React projects",
+  "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/tslint-config-react",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
   "contributors": [
     {
@@ -11,14 +11,16 @@
     }
   ],
   "license": "MIT",
-  "repository": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/tslint-config",
+  "repository": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/tslint-config-react",
   "keywords": [
     "omnious",
     "typescript",
     "styleguide",
     "tslint",
     "tslintconfig",
-    "config"
+    "config",
+    "react",
+    "jsx"
   ],
   "engines": {
     "node": ">= 8.9.4"
@@ -28,8 +30,6 @@
     "lint": "tslint -p ."
   },
   "peerDependencies": {
-    "tslint": "^5.9.1",
-    "tslint-eslint-rules": "^5.1.0",
-    "typescript": "^2.8.1"
+    "tslint-react": "^3.5.1"
   }
 }
