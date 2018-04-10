@@ -13,16 +13,33 @@
   "scripts": {
     "lint": "lerna run lint",
     "release": "lerna publish",
-    "prettier": "prettier --write packages/**/*.js"
+    "prettier": "prettier --write 'packages/**/*.js'"
   },
   "devDependencies": {
-    "eslint": "^4.18.2",
-    "lerna": "^2.9.0",
+    "@angular/common": "^5.2.9",
+    "@angular/compiler": "^5.2.9",
+    "@angular/core": "^5.2.9",
+    "@angular/platform-browser": "^5.2.9",
+    "@angular/platform-browser-dynamic": "^5.2.9",
+    "eslint": "^4.19.1",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "lerna": "^2.10.0",
     "npm-run-all": "^4.1.2",
     "prettier": "^1.11.1",
-    "stylelint": "^9.1.1",
+    "react": "^16.3.1",
+    "rxjs": "^5.5.8",
+    "stylelint": "^9.2.0",
+    "stylelint-no-unsupported-browser-features": "^3.0.0",
+    "stylelint-scss": "^3.0.0",
+    "stylelint-selector-bem-pattern": "^2.0.0",
     "tslint": "^5.9.1",
+    "tslint-angular": "^1.1.1",
+    "tslint-eslint-rules": "^5.1.0",
+    "tslint-microsoft-contrib": "^5.0.3",
     "tslint-react": "^3.5.1",
-    "typescript": "^2.7.2"
+    "typescript": "^2.8.1",
+    "zone.js": "^0.8.26"
   }
 }

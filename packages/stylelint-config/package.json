@@ -1,0 +1,37 @@
+{
+  "name": "@omnious/stylelint-config",
+  "version": "0.0.1",
+  "description": "Stylelint sharable config for the Omnious css style guide",
+  "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/stylelint-config",
+  "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
+  "contributors": [
+    {
+      "name": "Euihyun Yang",
+      "email": "ykd1217@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "repository": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/stylelint-config",
+  "keywords": [
+    "omnious",
+    "css",
+    "scss",
+    "styleguide",
+    "stylelint",
+    "stylelintconfig",
+    "config"
+  ],
+  "engines": {
+    "node": ">= 8.9.4"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint ."
+  },
+  "peerDependencies": {
+    "stylelint": "^9.2.0",
+    "stylelint-no-unsupported-browser-features": "^3.0.0",
+    "stylelint-scss": "^3.0.0",
+    "stylelint-selector-bem-pattern": "^2.0.0"
+  }
+}
