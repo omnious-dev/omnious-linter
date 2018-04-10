@@ -31,7 +31,7 @@
     "release": "lerna publish"
   },
   "dependencies": {
-    "@omnious/tslint-config": "^0.0.2-rc1"
+    "@omnious/tslint-config": "^0.0.2-rc0"
   },
   "peerDependencies": {
     "tslint-react": "^3.5.1"
