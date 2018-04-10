@@ -10,7 +10,7 @@ module.exports = {
     // When using a boolean attribute in JSX, you can set the attribute value to true or omit the value. This rule will enforce one or the other to keep consistency in your code.
     'jsx-boolean-value': [true, 'never'],
     // Requires or bans spaces between curly brace characters in JSX.
-    'jsx-curly-spacing': [true, 'always'],
+    'jsx-curly-spacing': [true, 'never'],
     // Requires or bans spaces before and after the = token in JSX element attributes.
     'jsx-equals-spacing': [true, 'never'],
     // Warns for missing key props in JSX element array literals and inside return statements of Array.prototype.map callbacks.
@@ -29,7 +29,7 @@ module.exports = {
     // Passing strings to the ref prop of React elements is considered a legacy feature and will soon be deprecated. Instead, use a callback.
     'jsx-no-string-ref': true,
     // Enforces use of a translation function. Plain string literals are disallowed in JSX when enabled.
-    'jsx-use-translation-function': true,
+    'jsx-use-translation-function': false,
     // Enforces that JSX elements with no children are self-closing.
     'jsx-self-close': true,
     /*
