@@ -55,7 +55,7 @@ module.exports = {
      * Functionality
     */
     // Enforces braces for if/for/do/while statements.
-    'curly': [true, 'as-needed'],
+    'curly': false,
     // Bans the use of specified console methods.
     'no-console': false,
     // Disallows importing modules that are not listed as dependency in the project’s package.json
@@ -123,7 +123,7 @@ module.exports = {
     // Requires that import statements be alphabetized and grouped.
     'ordered-imports': false,
     // Warns for class methods that do not use ‘this’.
-    'prefer-function-over-method': true,
+    'prefer-function-over-method': [true, 'allow-public'],
     // Requires single or double quotes for string literals.
     'quotemark': [
       true,
