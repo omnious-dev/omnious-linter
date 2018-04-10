@@ -10,9 +10,6 @@
   "engines": {
     "node": ">= 8.9.0"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "lint": "lerna run lint",
     "release": "lerna publish",
