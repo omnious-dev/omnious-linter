@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['./rules/angular', './rules/eslint', './rules/react'],
+  extends: './rules/eslint',
   rules: {
     /**
      * TypeScript-specific
@@ -165,4 +165,4 @@ module.exports = {
       'check-preblock'
     ]
   }
-}
+};

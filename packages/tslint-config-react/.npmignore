@@ -1,3 +1,7 @@
 examples
+test
+.npmignore
+CHANGELOG.md
+README.md
 tsconfig.json
 tslint.json
