@@ -143,6 +143,9 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@omnious/tslint-config@^0.0.2-rc1":
+  version "0.0.2-rc0"
+
 JSONStream@^0.8.4:
   version "0.8.4"
   resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-0.8.4.tgz#91657dfe6ff857483066132b4618b62e8f4887bd"

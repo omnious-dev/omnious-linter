@@ -1,9 +1,8 @@
 module.exports = {
-  extends: [
-    'eslint-config-omnious',
-    './rules/import',
-    './rules/react',
-    './rules/react-a11y'
-  ].map(require.resolve),
-  rules: {}
+  extends: ['@omnious', './rules/react', './rules/a11y'],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
+    }
+  }
 };

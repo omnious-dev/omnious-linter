@@ -43,31 +43,31 @@ module.exports = {
     // Disallows the use of require statements except in import statements.
     'no-var-requires': true,
     // Lint rules encode logic for syntactic & semantic checks of TypeScript source code.
-    'only-arrow-functions': [
-      true,
-      'allow-declarations',
-      'allow-named-functions'
-    ],
+    'only-arrow-functions': [true, 'allow-declarations', 'allow-named-functions'],
     // Recommends a ‘for-of’ loop over a standard ‘for’ loop if the index is only used to access the array being iterated.
     'prefer-for-of': true,
     // Requires any function or method that returns a promise to be marked async.
     'promise-function-async': true,
     // Requires type definitions to exist.
-    'typedef': false,
+    typedef: false,
     // Requires or disallows whitespace for type definitions.
-    'typedef-whitespace': [true, {
-      'call-signature': 'nospace',
-      'index-signature': 'nospace',
-      'parameter': 'nospace',
-      'property-declaration': 'nospace',
-      'variable-declaration': 'nospace'
-    }, {
-      'call-signature': 'onespace',
-      'index-signature': 'onespace',
-      'parameter': 'onespace',
-      'property-declaration': 'onespace',
-      'variable-declaration': 'onespace'
-    }],
+    'typedef-whitespace': [
+      true,
+      {
+        'call-signature': 'nospace',
+        'index-signature': 'nospace',
+        parameter: 'nospace',
+        'property-declaration': 'nospace',
+        'variable-declaration': 'nospace'
+      },
+      {
+        'call-signature': 'onespace',
+        'index-signature': 'onespace',
+        parameter: 'onespace',
+        'property-declaration': 'onespace',
+        'variable-declaration': 'onespace'
+      }
+    ],
     // Warns for any two overloads that could be unified into one by using a union or an optional/rest parameter.
     'unified-signatures': true,
 
@@ -79,11 +79,11 @@ module.exports = {
     // Disallows the comma operator to be used.
     'ban-comma-operator': true,
     // Bans the use of specific functions or global methods.
-    'ban': false,
+    ban: false,
     // Enforces braces for if/for/do/while statements.
-    'curly': false,
+    curly: false,
     // Requires a for ... in statement to be filtered with an if statement.
-    'forin': true,
+    forin: true,
     // Disallows importing the specified modules directly via import and require. Instead only sub modules may be imported from that module.
     'import-blacklist': false,
     // Only allows labels in sensible locations.
@@ -136,7 +136,7 @@ module.exports = {
     // Disallows unnecessary return await.
     'no-return-await': true,
     // Disallows shadowing variable declarations.
-    'no-shadowed-variable': true,
+    'no-shadowed-variable': false,
     // Forbids array literals to contain missing elements.
     'no-sparse-arrays': true,
     // Forbids unnecessary string literal property access. Allows obj["prop-erty"] (can’t be a regular property access). Disallows obj["property"] (should be obj.property).
@@ -167,6 +167,31 @@ module.exports = {
     'no-var-keyword': true,
     // Requires expressions of type void to appear in statement position.
     'no-void-expression': true,
+    // Recommends to use a conditional expression instead of assigning to the same thing in each branch of an if statement.
+    'prefer-conditional-expression': true,
+    // Enforces the use of the ES2015 object spread operator over Object.assign() where appropriate.
+    'prefer-object-spread': {
+      options: true,
+      severity: 'warning'
+    },
+    // Requires the radix parameter to be specified when calling parseInt.
+    radix: true,
+    // When adding two variables, operands must both be of type number or of type string.
+    'restrict-plus-operands': true,
+    // Restricts the types allowed in boolean expressions. By default only booleans are allowed.
+    'strict-boolean-expressions': true,
+    // Warns for type predicates that are always true or always false. Works for ‘typeof’ comparisons to constants (e.g. ‘typeof foo === “string”’), and equality comparison to ‘null’/’undefined’. (TypeScript won’t let you compare ‘1 === 2’, but it has an exception for ‘1 === undefined’.) Does not yet work for ‘instanceof’. Does not warn for ‘if (x.y)’ where ‘x.y’ is always truthy. For that, see strict-boolean-expressions.
+    'strict-type-predicates': true,
+    // Require a default case in all switch statements.
+    'switch-default': true,
+    // Requires === and !== in place of == and !=.
+    'triple-equals': true,
+    // Makes sure result of typeof is compared to correct string values
+    'typeof-compare': true,
+    // Warns if an explicitly specified type argument is the default for that type parameter.
+    'use-default-type-parameter': true,
+    // Enforces use of the isNaN() function to check for NaN references instead of a comparison to the NaN constant.
+    'use-isnan': true,
 
     /*
      * Maintainability
@@ -174,18 +199,18 @@ module.exports = {
     // Enforces a threshold of cyclomatic complexity.
     'cyclomatic-complexity': true,
     // Warns when deprecated APIs are used.
-    'deprecation': true,
+    deprecation: true,
     // Ensures the file ends with a newline.
-    'eofline': true,
+    eofline: true,
     // Enforces indentation with tabs or spaces.
-    'indent': [true, 'spaces', 2],
+    indent: [true, 'spaces', 2],
     // Enforces a consistent linebreak style.
     'linebreak-style': [true, 'LF'],
     // A file may not contain more than the specified number of classes
     'max-classes-per-file': false,
     // Requires files to remain under a certain number of lines
     'max-file-line-count': {
-      options: [true, 300],
+      options: 300,
       severity: 'warning'
     },
     // Requires lines to be under a certain max length.
@@ -193,7 +218,7 @@ module.exports = {
     // Disallows default exports in ES6-style modules.
     'no-default-export': false,
     // Disallows multiple import statements from the same module.
-    'no-duplicate-imports': true,
+    'no-duplicate-imports': false,
     // Disallows mergeable namespaces in the same file.
     'no-mergeable-namespace': true,
     // Disallows invocation of require().
@@ -205,16 +230,19 @@ module.exports = {
     // Requires that private variables are marked as readonly if they’re never modified outside of the constructor.
     'prefer-readonly': true,
     // Requires or disallows trailing commas in array and object literals, destructuring assignments, function typings, named imports and exports and function parameters.
-    'trailing-comma': [true, {
-      multiline: 'never',
-      singleline: 'never'
-    }],
+    'trailing-comma': [
+      true,
+      {
+        multiline: 'never',
+        singleline: 'never'
+      }
+    ],
 
     /*
      * Style
      */
     // Enforces vertical alignment.
-    'align': [true, 'parameters', 'arguments', 'statements', 'members', 'elements'],
+    align: [true, 'parameters', 'arguments', 'statements', 'members', 'elements'],
     // Requires using either ‘T[]’ or ‘Array' for arrays.
     'array-type': [true, 'generic'],
     // Requires parentheses around the parameters of arrow function definitions.
@@ -233,7 +261,7 @@ module.exports = {
     // TODO:
     'completed-docs': false,
     // Enforces UTF-8 file encoding.
-    'encoding': true,
+    encoding: true,
     // Enforces a certain header comment for all files, matched by a regular expression.
     'file-header': false,
     // Ensures proper spacing between import statement keywords
@@ -244,42 +272,89 @@ module.exports = {
     'interface-over-type-literal': true,
     // Enforces basic format rules for JSDoc comments.
     'jsdoc-format': [true, 'check-multiline-start'],
+    // Requires that a default import have the same name as the declaration it imports. Does nothing for anonymous default exports.
+    'match-default-export-name': true,
+    // Enforces blank line before return when not the only line in the block.
+    'newline-before-return': true,
     // Requires that chained method calls be broken apart onto separate lines.
     'newline-per-chained-call': false,
+    // Requires parentheses when invoking a constructor via the new keyword.
+    'new-parens': true,
+    // Requires the use of as Type for type assertions instead of <Type>.
+    'no-angle-bracket-type-assertion': true,
+    // Warns on comparison to a boolean literal, as in x === true.
+    'no-boolean-literal-compare': true,
     // Disallows one or more blank lines in a row.
     'no-consecutive-blank-lines': [true, 2],
+    // Disallow irregular whitespace within a file, including strings and comments.
+    'no-irregular-whitespace': true,
+    // Disallows parameter properties in class constructors.
+    'no-parameter-properties': true,
+    // Forbids JSDoc which duplicates TypeScript functionality.
+    'no-redundant-jsdoc': true,
+    // Don’t <reference types="foo" /> if you import foo anyway.
+    'no-reference-import': true,
+    // Disallows trailing whitespace at the end of a line.
+    'no-trailing-whitespace': true,
+    // Replaces x => f(x) with just f. To catch more cases, enable only-arrow-functions and arrow-return-shorthand too.
+    'no-unnecessary-callback-wrapper': true,
+    // Forbids a ‘var’/’let’ statement or destructuring initializer to be initialized to ‘undefined’.
+    'no-unnecessary-initializer': true,
+    // Warns when a namespace qualifier (A.x) is unnecessary.
+    'no-unnecessary-qualifier': true,
+    // Checks that decimal literals should begin with ‘0.’ instead of just ‘.’, and should not end with a trailing ‘0’.
+    'number-literal-format': true,
+    // Enforces consistent object literal property quote style.
+    'object-literal-key-quotes': [true, 'consistent-as-needed'],
+    // Enforces/disallows use of ES6 object literal shorthand.
+    'object-literal-shorthand': true,
+    // Requires the specified tokens to be on the same line as the expression preceding them.
+    'one-line': true,
+    // Disallows multiple variable definitions in the same declaration statement.
+    'one-variable-per-declaration': true,
     // Requires that import statements be alphabetized and grouped.
     'ordered-imports': false,
     // Warns for class methods that do not use ‘this’.
     'prefer-function-over-method': [true, 'allow-public'],
-    // Requires single or double quotes for string literals.
-    'quotemark': [
+    // Prefer foo(): void over foo: () => void in interfaces and types.
+    'prefer-method-signature': true,
+    // Prefer a switch statement to an if statement with simple === comparisons.
+    'prefer-switch': [
       true,
-      'single',
-      'jsx-double',
-      'avoid-template',
-      'avoid-escape'
+      {
+        'min-cases': 3
+      }
     ],
+    // Prefer a template expression over string literal concatenation.
+    'prefer-template': true,
+    // Requires single or double quotes for string literals.
+    quotemark: [true, 'single', 'jsx-double', 'avoid-template', 'avoid-escape'],
+    // Prefer return; in void functions and return undefined; in value-returning functions.
+    'return-undefined': false,
     // Enforces consistent semicolon usage at the end of every statement.
     // TODO: ignore-interfaces, ignore-bound-class-methods, strict-bound-class-methods
-    'semicolon': [true, 'always'],
+    semicolon: [true, 'always'],
     // Require or disallow a space before function parenthesis
-    'space-before-function-paren': [true, {
-      anonymous: 'always',
-      named: 'never',
-      asyncArrow: 'always',
-      method: 'never',
-      constructor: 'always'
-    }],
-    // Checks variable names for various errors.
-    'variable-name': [
+    'space-before-function-paren': [
       true,
-      'check-format',
-      'allow-pascal-case',
-      'ban-keywords'
+      {
+        anonymous: 'always',
+        named: 'never',
+        asyncArrow: 'always',
+        method: 'never',
+        constructor: 'always'
+      }
     ],
+    // Enforces spaces within parentheses or disallow them. Empty parentheses () are always allowed.
+    'space-within-parens': true,
+    // Checks whether the final clause of a switch statement ends in break;.
+    'switch-final-break': true,
+    // Checks that type literal members are separated by semicolons. Enforces a trailing semicolon for multiline type literals.
+    'type-literal-delimiter': true,
+    // Checks variable names for various errors.
+    'variable-name': [true, 'check-format', 'allow-pascal-case', 'ban-keywords'],
     // Enforces whitespace style conventions.
-    'whitespace': [
+    whitespace: [
       true,
       'check-branch',
       'check-decl',

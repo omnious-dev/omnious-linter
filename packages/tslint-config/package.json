@@ -30,6 +30,7 @@
   "peerDependencies": {
     "tslint": "^5.9.1",
     "tslint-eslint-rules": "^5.1.0",
+    "tslint-microsoft-contrib": "^5.0.3",
     "typescript": "^2.8.1"
   }
 }

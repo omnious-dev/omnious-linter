@@ -33,6 +33,9 @@
   "dependencies": {
     "@omnious/tslint-config": "^0.0.2-rc0"
   },
+  "dependencies": {
+    "@omnious/tslint-config": "^0.0.2-rc1"
+  },
   "peerDependencies": {
     "tslint-react": "^3.5.1"
   }

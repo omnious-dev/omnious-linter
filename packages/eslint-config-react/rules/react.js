@@ -1,17 +1,12 @@
 module.exports = {
   plugins: ['react'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   rules: {
-    /**
+    /*
      * Stylistic Issues
      */
     'jsx-quotes': ['error', 'prefer-double'],
 
-    /**
+    /*
      * React rules
      */
     // Enforces consistent naming for boolean props
@@ -116,7 +111,7 @@ module.exports = {
     // Prevent void DOM elements (e.g. <img />, <br />) from receiving children
     'react/void-dom-elements-no-children': 'error',
 
-    /**
+    /*
      * JSX-specific rules
      */
     // Enforce boolean attributes notation in JSX
@@ -144,7 +139,10 @@ module.exports = {
     // Limit maximum of props on a single line in JSX
     'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
     // Prevent usage of .bind() and arrow functions in JSX props
-    'react/jsx-no-bind': ['error', { ignoreRefs: true, allowArrowFunctions: true, allowBind: false }],
+    'react/jsx-no-bind': [
+      'error',
+      { ignoreRefs: true, allowArrowFunctions: true, allowBind: false }
+    ],
     // Prevent comments from being inserted as text nodes
     'react/jsx-no-comment-textnodes': 'error',
     // Prevent duplicate props in JSX
@@ -167,12 +165,18 @@ module.exports = {
     // Deprecation
     'react/jsx-space-before-closing': 'off',
     // Validate whitespace in and around the JSX opening and closing brackets
-    'react/jsx-tag-spacing': ['error', { closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never' }],
+    'react/jsx-tag-spacing': [
+      'error',
+      { closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never' }
+    ],
     // Prevent React to be incorrectly marked as unused
     'react/jsx-uses-react': 'error',
     // Prevent variables used in JSX to be incorrectly marked as unused
     'react/jsx-uses-vars': 'error',
     // Prevent missing parentheses around multilines JSX
-    'react/jsx-wrap-multilines': ['error', { declaration: true, assignment: true, return: true, arrow: true }]
+    'react/jsx-wrap-multilines': [
+      'error',
+      { declaration: true, assignment: true, return: true, arrow: true }
+    ]
   }
 };

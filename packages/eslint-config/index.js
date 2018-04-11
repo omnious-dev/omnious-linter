@@ -59,9 +59,9 @@ module.exports = {
      * Best Practices
      */
     // Enforce consistent brace style for all control statements
-    'curly': ['error', 'multi-or-nest', 'consistent'],
+    curly: ['error', 'multi-or-nest', 'consistent'],
     // Require the use of === and !==
-    'eqeqeq': ['error', 'always', { null: 'ignore' }],
+    eqeqeq: ['error', 'always', { null: 'ignore' }],
 
     /*
      * Strict Mode
@@ -103,7 +103,7 @@ module.exports = {
     // Enforce consistent brace style for blocks
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     // TODO: Enforce camelcase naming convention
-    'camelcase': 'off',
+    camelcase: 'off',
     // Enforce capitalization of the first letter of a comment
     'capitalized-comments': 'off',
     // TODO: Require trailing commas
@@ -122,7 +122,7 @@ module.exports = {
     'id-length': ['error', { min: 1, max: 64 }],
     // Enforce consistent indentation
     // TODO: Apply more options
-    'indent': [
+    indent: [
       'error',
       2,
       {
@@ -177,10 +177,7 @@ module.exports = {
     // Disallow all tabs
     'no-tabs': 'error',
     // Disallow trailing whitespace at the end of lines
-    'no-trailing-spaces': [
-      'error',
-      { skipBlankLines: false, ignoreComments: false }
-    ],
+    'no-trailing-spaces': ['error', { skipBlankLines: false, ignoreComments: false }],
     // Disallow dangling underscores in identifiers
     'no-underscore-dangle': ['error', { enforceInMethodNames: true }],
     // Disallow ternary operators when simpler alternatives exist
@@ -210,7 +207,7 @@ module.exports = {
     // Require quotes around object literal property names
     'quote-props': ['error', 'consistent'],
     // Enforce the consistent use of either backticks, double, or single quotes
-    'quotes': [
+    quotes: [
       'error',
       'single',
       {
@@ -221,7 +218,7 @@ module.exports = {
     // Require JSDoc comments
     'require-jsdoc': 'off',
     // Require semicolons instead of ASI
-    'semi': ['error', 'always'],
+    semi: ['error', 'always'],
     // Enforce consistent spacing before and after semicolons
     'semi-spacing': ['error', { before: false, after: true }],
     // Enforce location of semicolons

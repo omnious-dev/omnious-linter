@@ -3,12 +3,8 @@
 const assert = require('assert');
 const eslint = require('eslint');
 
-
 // The source files to lint
-const targets = [
-  'index.js',
-  'test'
-];
+const targets = ['index.js', 'test'];
 
 // Run the linter on the targets and asserts no errors were found
 const cli = new eslint.CLIEngine();
