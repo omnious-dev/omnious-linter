@@ -20,7 +20,7 @@ module.exports = {
     // Forbids empty interfaces.
     'no-empty-interface': true,
     // Avoid import statements with side-effect.
-    'no-import-side-effect': false,
+    'no-import-side-effect': true,
     // Disallows explicit type declarations for variables or parameters initialized to a number, string, or boolean.
     'no-inferrable-types': {
       options: true,
