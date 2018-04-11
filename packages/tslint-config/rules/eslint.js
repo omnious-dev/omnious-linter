@@ -21,7 +21,7 @@ module.exports = {
      * Stylistic Issues
      */
     // Enforce consistent spacing inside array brackets
-    'array-bracket-spacing': 'error',
+    'array-bracket-spacing': ['error', 'never'],
     // Enforce consistent spacing inside single-line blocks
     'block-spacing': 'error',
     // Enforce consistent brace style for blocks
@@ -51,4 +51,4 @@ module.exports = {
     // Disallow padding within blocks
     'ter-padded-blocks': ['error', 'never']
   }
-}
+};

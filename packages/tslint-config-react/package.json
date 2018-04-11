@@ -27,11 +27,10 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "tslint -p .",
-    "release": "lerna publish"
+    "lint": "tslint -p ."
   },
   "dependencies": {
-    "@omnious/tslint-config": "^0.0.2-rc0"
+    "@omnious/tslint-config": "^0.0.2-rc1"
   },
   "peerDependencies": {
     "tslint-react": "^3.5.1"

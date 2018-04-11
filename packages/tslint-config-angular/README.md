@@ -1,0 +1,1 @@
+# @omnious/tslint-config-angular

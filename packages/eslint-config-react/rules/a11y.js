@@ -1,10 +1,5 @@
 module.exports = {
   plugins: ['jsx-a11y'],
-  parserOptions: {
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   rules: {
     // Enforce emojis are wrapped in and provide screenreader access.
     'jsx-a11y/accessible-emoji': 'warn',

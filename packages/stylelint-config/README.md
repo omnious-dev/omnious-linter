@@ -1,0 +1,1 @@
+# @omnious/stylelint-config
