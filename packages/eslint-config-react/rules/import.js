@@ -135,7 +135,7 @@ module.exports = {
     'import/newline-after-import': [
       'error',
       {
-        count: 2
+        count: 1
       }
     ],
     // Prefer a default export if module exports a single name
