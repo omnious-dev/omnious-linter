@@ -1,6 +1,6 @@
 {
   "name": "@omnious/stylelint-config",
-  "version": "0.0.2-rc2",
+  "version": "0.0.2-rc3",
   "description": "Stylelint sharable config for the Omnious css style guide",
   "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/stylelint-config",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
