@@ -1,4 +1,5 @@
 module.exports = {
-  extends: ['@omnious/tslint-config', 'tslint-angular'],
+  extends: '@omnious/tslint-config',
+  rulesDirectory: ['tslint-angular']
   rules: {}
 };

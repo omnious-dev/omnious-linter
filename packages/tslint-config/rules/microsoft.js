@@ -1,5 +1,5 @@
 module.exports = {
-  extends: 'tslint-microsoft-contrib',
+  rulesDirectory: 'tslint-microsoft-contrib',
   rules: {
     // The name of the exported module must match the filename of the source file.
     'export-name': false,
@@ -21,8 +21,8 @@ module.exports = {
     'no-backbone-get-set-outside-model': false,
     // Do not use banned terms: caller, callee, eval, arguments.
     'no-banned-terms': true,
-    // Do not use constant expressions in conditions.
-    'no-constant-condition': false,
+    // NOTE: deprecated
+    // 'no-constant-condition': false,
     // Do not use control characters in regular expressions.
     'no-control-regex': true,
     // Do not use cookies
@@ -50,10 +50,7 @@ module.exports = {
     // Do not use function expressions; use arrow functions (lambdas) instead.
     'no-function-expression': true,
     // Do not use strings that start with 'http:'. URL strings should start with 'https:'.
-    'no-http-string': {
-      options: true,
-      severity: 'warning'
-    },
+    'no-http-string': { severity: 'warning' },
     // Avoid use of increment and decrement operators particularly as part of complicated expressions
     'no-increment-decrement': true,
     // Do not write values to innerHTML, outerHTML, or set HTML using the JQuery html() function.
@@ -65,7 +62,7 @@ module.exports = {
     // NOTE: deprecated
     // 'no-missing-visibility-modifiers': true,
     // Do not declare multiline strings
-    'no-multiline-string': false,
+    'no-multiline-string': true,
     // NOTE: deprecated
     // 'no-multiple-var-decl': true,
     // Do not use octal literals or escaped octal sequences
@@ -77,10 +74,7 @@ module.exports = {
     // Do not use reserved keywords as names of local variables, fields, functions, or other identifiers.
     'no-reserved-keywords': false,
     // Avoid single line block comments and use single line comments instead.
-    'no-single-line-block-comment': {
-      options: true,
-      severity: 'warning'
-    },
+    'no-single-line-block-comment': { severity: 'warning' },
     // NOTE: deprecated
     // 'no-stateless-class': true,
     // Do not use the version of setImmediate that accepts code as a string argument.
@@ -108,10 +102,7 @@ module.exports = {
     // Avoid writing browser-specific code for unsupported browser versions.
     'no-unsupported-browser-code': [true, '> 1%', 'last 2 versions'],
     // Avoid keeping files around that only contain commented out code, are completely empty, or only contain whitespace characters
-    'no-useless-files': {
-      options: true,
-      severity: 'warning'
-    },
+    'no-useless-files': { severity: 'warning' },
     // NOTE: deprecated
     // 'no-var-self': true,
     // Do not use with statements.

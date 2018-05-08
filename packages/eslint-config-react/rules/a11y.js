@@ -32,7 +32,7 @@ module.exports = {
     // Enforce that elements with interactive handlers like onClick must be focusable.
     'jsx-a11y/interactive-supports-focus': 'warn',
     // Enforce that <label> elements have the htmlFor prop.
-    'jsx-a11y/label-has-for': 'error',
+    'jsx-a11y/label-has-for': ['error', { allowChildren: true }],
     // Enforce lang attribute has a valid value.
     'jsx-a11y/lang': 'error',
     // Enforces that <audio> and <video> elements must have a <track> for captions.

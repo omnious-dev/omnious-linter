@@ -1,54 +1,93 @@
 module.exports = {
-  extends: 'tslint-eslint-rules',
+  rulesDirectory: 'tslint-eslint-rules',
   rules: {
     /**
      * Possible Errors
      */
     // Disallow constant expressions in conditions
-    'no-constant-condition': 'error',
+    'no-constant-condition': [true, { checkLoops: false }],
     // Disallow control characters in regular expressions
-    'no-control-regex': 'error',
+    'no-control-regex': true,
     // Disallow duplicate cases in case statements
-    'no-duplicate-case': 'error',
+    'no-duplicate-case': true,
     // Disallow empty character classes in regular expressions
-    'no-empty-character-class': 'error',
+    'no-empty-character-class': true,
     // Disallow reassigning exceptions in catch clauses
-    'no-ex-assign': 'error',
+    'no-ex-assign': true,
     // Disallow unnecessary boolean casts
-    'no-extra-boolean-cast': 'error',
+    'no-extra-boolean-cast': true,
+    // Disallow unnecessary semicolons
+    'no-extra-semi': true,
+    // Disallow function or variable declarations in nested blocks
+    'no-inner-declarations': true,
+    // Disallow invalid regular expression strings in the RegExp constructor
+    'no-invalid-regexp': true,
+    // NOTE: deprecated
+    // 'ter-no-irregular-whitespace': true,
+    // Disallow multiple spaces in a regular expression literal
+    'no-regex-spaces': true,
+    // NOTE: deprecated
+    // 'ter-no-sparse-arrays': true,
+    // Avoid code that looks like two expressions but is actually one
+    'no-unexpected-multiline': true,
+    // Enforce valid JSDoc comments
+    'valid-jsdoc': true,
+    // Ensure that the results of typeof are compared against a valid string
+    'valid-typeof': true,
+
+    /**
+     * Best Practices
+     */
+    // Disallow use of multiple spaces
+    'no-multi-spaces': true,
+    // FIXME: not added yet
+    // Disallow the use of __proto__ property
+    // 'ter-no-proto': true,
+    // Disallow use of javascript: urls.
+    // 'ter-no-script-url': true,
+    // Disallow comparisons where both sides are exactly the same
+    // 'ter-no-self-compare': true,
+
+    /**
+     * Node.js and CommonJS
+     */
+    // Enforce error handling in callbacks
+    'handle-callback-err': true,
 
     /**
      * Stylistic Issues
      */
     // Enforce consistent spacing inside array brackets
-    'array-bracket-spacing': ['error', 'never'],
+    'array-bracket-spacing': [true, 'never'],
     // Enforce consistent spacing inside single-line blocks
-    'block-spacing': 'error',
+    'block-spacing': true,
     // Enforce consistent brace style for blocks
-    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+    'brace-style': [true, '1tbs', { allowSingleLine: true }],
     // Enforce consistent spacing inside computed property brackets
-    'ter-computed-property-spacing': 'error',
+    'ter-computed-property-spacing': true,
     // Disallow spacing between function identifiers and their invocations
-    'ter-func-call-spacing': ['error', 'never'],
+    'ter-func-call-spacing': [true, 'never'],
     // Enforce consistent indentation
-    // TODO: Apply more options
     'ter-indent': [
-      'error',
+      true,
       2,
-      {
-        SwitchCase: 1,
-        ArrayExpression: 1,
-        ObjectExpression: 1,
-        ImportDeclaration: 1
-      }
+      { SwitchCase: 1, ArrayExpression: 1, ObjectExpression: 1, ImportDeclaration: 1 }
     ],
+    // Enforce a maximum line length
+    'ter-max-len': false,
+    // Require or disallow an empty newline after variable declarations
+    'ter-newline-after-var': false,
     // Disallow mixed spaces and tabs for indentation
-    'ter-no-mixed-spaces-and-tabs': 'error',
-    // Disallow all tabs
-    'ter-no-tabs': 'error',
+    'ter-no-mixed-spaces-and-tabs': true,
     // Enforce consistent spacing inside braces
-    'object-curly-spacing': ['error', 'always'],
+    'object-curly-spacing': [true, 'always'],
     // Disallow padding within blocks
-    'ter-padded-blocks': ['error', 'never']
+    'ter-padded-blocks': false,
+    // NOTE: replaced with `[tslint] ordered-imports`
+    // 'sort-imports': true,
+    // Require or disallow spaces inside parentheses
+    'space-in-parens': [true, 'never'],
+    // Disallow all tabs
+    'ter-no-tabs': true
   }
 };
