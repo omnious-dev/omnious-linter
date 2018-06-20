@@ -2,13 +2,13 @@
 
 module.exports = {
   extends: 'eslint:recommended',
-  parserOptions: {
-    ecmaVersion: 2017,
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true
-    },
-    sourceType: 'module'
-  },
+  // parserOptions: {
+  // ecmaVersion: 2017,
+  // ecmaFeatures: {
+  //   experimentalObjectRestSpread: true
+  // },
+  // sourceType: 'module'
+  // },
   env: {
     node: true
   },
@@ -63,7 +63,10 @@ module.exports = {
     curly: ['error', 'all'],
     // // Require the use of === and !==
     // eqeqeq: ['error', 'always', { null: 'ignore' }],
-
+    // TODO: Disallow magic numbers
+    'no-magic-numbers': 'off',
+    // Disallow specified warning terms in comments
+    'no-warning-comments': 'off',
     /**
      * Strict Mode
      */
@@ -85,6 +88,8 @@ module.exports = {
     // 'no-undef-init': 'error',
     // // Disallow the use of `undefined` as an identifier
     // 'no-undefined': 'error',
+    // Disallow Unused Variables
+    'no-unused-vars': ['error', { vars: 'all', args: 'all', caughtErrors: 'all' }],
 
     /**
      * Node.js and CommonJS
@@ -101,14 +106,16 @@ module.exports = {
      */
     // // Enforce consistent spacing inside array brackets
     // 'array-bracket-spacing': 'error',
+    // Enforce line breaks after each array element
+    'array-element-newline': ['error', { multiline: true }],
     // // Enforce consistent spacing inside single-line blocks
     // 'block-spacing': 'error',
     // // Enforce consistent brace style for blocks
     // 'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     // // TODO: Enforce camelcase naming convention
     // camelcase: 'off',
-    // // Enforce capitalization of the first letter of a comment
-    // 'capitalized-comments': 'off',
+    // Enforce capitalization of the first letter of a comment
+    'capitalized-comments': 'off',
     // // TODO: Require trailing commas
     // 'comma-dangle': 'off',
     // // Enforce consistent spacing before and after commas
@@ -123,8 +130,8 @@ module.exports = {
     // 'func-call-spacing': ['error', 'never'],
     // Enforce the consistent use of either function declarations or expressions
     'func-style': ['error', 'declaration', { allowArrowFunctions: true }],
-    // // Enforce minimum and maximum identifier lengths
-    // 'id-length': ['error', { min: 1, max: 64 }],
+    // Enforce minimum and maximum identifier lengths
+    'id-length': ['error', { min: 1, max: 64 }],
     // Enforce consistent indentation
     indent: [
       'error',
@@ -154,8 +161,12 @@ module.exports = {
     // 'linebreak-style': ['error', 'unix'],
     // // Enforce a maximum depth that blocks can be nested
     // 'max-depth': ['warn', 4],
-    // // TODO: Enforce a maximum line length
-    // // 'max-len': ['error', 100],
+    // Enforce a maximum line length
+    'max-len': ['warn', 100],
+    // Enforce a particular style for multiline comments
+    'multiline-comment-style': ['error', 'separate-lines'],
+    // Enforce newlines between operands of ternary expressions
+    'multiline-ternary': ['error', 'always-multiline'],
     // // Require constructor names to begin with a capital letter
     // 'new-cap': ['error', { newIsCap: true, capIsNew: false }],
     // // Require parentheses when invoking a constructor with no arguments
@@ -180,6 +191,8 @@ module.exports = {
     // 'no-nested-ternary': 'error',
     // // Disallow all tabs
     // 'no-tabs': 'error',
+    // Disallow ternary operators
+    'no-ternary': 'off',
     // // Disallow trailing whitespace at the end of lines
     // 'no-trailing-spaces': ['error', { skipBlankLines: false, ignoreComments: false }],
     // // Disallow dangling underscores in identifiers
@@ -190,14 +203,14 @@ module.exports = {
     // 'no-whitespace-before-property': 'error',
     // Enforce consistent spacing inside braces
     'object-curly-spacing': ['error', 'always'],
-    // // Enforce placing object properties on separate lines
-    // 'object-property-newline': [
-    //   'error',
-    //   {
-    //     // Allow all keys and values to be on the same line
-    //     allowMultiplePropertiesPerLine: true
-    //   }
-    // ],
+    // Enforce placing object properties on separate lines
+    'object-property-newline': [
+      'error',
+      {
+        // Allow all keys and values to be on the same line
+        allowMultiplePropertiesPerLine: true
+      }
+    ],
     // Allow just one var statement per function
     'one-var': ['error', 'never'],
     // // Require a newline around variable declaration
@@ -208,8 +221,8 @@ module.exports = {
     // 'operator-linebreak': 'off',
     // Disallow padding within blocks
     'padded-blocks': ['error', 'never'],
-    // // Require quotes around object literal property names
-    // 'quote-props': ['error', 'consistent'],
+    // Require quotes around object literal property names
+    'quote-props': ['error', 'as-needed'],
     // Enforce the consistent use of either backticks, double, or single quotes
     quotes: [
       'error',
@@ -227,6 +240,8 @@ module.exports = {
     // 'semi-spacing': ['error', { before: false, after: true }],
     // // Enforce location of semicolons
     // 'semi-style': ['error', 'last'],
+    // Require object keys to be sorted
+    'sort-keys': ['warn', 'asc', { caseSensitive: true, natural: true }],
     // // Enfore consistent spacing before blocks
     // 'space-before-blocks': 'error',
     // Enforce consistent spacing before `function` definition
@@ -264,6 +279,10 @@ module.exports = {
     /**
      * ECMAScript 6
      */
+    // Require parens in arrow function arguments
+    'arrow-parens': ['error', 'as-needed', { requireForBlockBody: false }],
+    // Enforce spacing around the * in generator functions
+    'generator-star-spacing': ['error', { before: false, after: true }],
     // // Require let or const instead of var
     // 'no-var': 'error',
     // // Enforce spacing between rest and spread operators and their expressions

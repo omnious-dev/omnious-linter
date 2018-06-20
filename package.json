@@ -4,16 +4,11 @@
   "private": true,
   "description": "Code style guide configs for Omnious.",
   "license": "MIT",
-  "keywords": [
-    "omnious"
-  ],
-  "workspaces": [
-    "packages/*"
-  ],
+  "keywords": ["omnious"],
+  "workspaces": ["packages/*"],
   "scripts": {
-    "lint": "lerna run lint",
     "release": "lerna publish",
-    "prettier": "prettier --write 'packages/**/*.js'"
+    "release:pre": "lerna publish --cd-version prerelease --preid=rc --npm-tag next"
   },
   "devDependencies": {
     "@angular/common": "^5.2.9",

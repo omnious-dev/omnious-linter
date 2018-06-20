@@ -12,12 +12,12 @@ module.exports = {
     // // Enforces consistent naming for boolean props
     // // Allow is & has prefixes
     // 'react/boolean-prop-naming': ['warn', { rule: '^(is|has)[A-Z]([A-Za-z0-9]?)+' }],
-    // // Forbid "button" element without an explicit "type" attribute
-    // 'react/button-has-type': 'off',
+    // Forbid "button" element without an explicit "type" attribute
+    'react/button-has-type': ['warn', { button: true, submit: true, reset: true }],
     // // Prevent extraneous defaultProps on components
     // 'react/default-props-match-prop-types': 'off',
-    // // Rule enforces consistent usage of destructuring assignment in component
-    // 'react/destructuring-assignment': 'off',
+    // Rule enforces consistent usage of destructuring assignment in component
+    'react/destructuring-assignment': 'off',
     // // Prevent missing displayName in a React component definition
     // 'react/display-name': 'off',
     // // Forbid certain props on Components
@@ -76,34 +76,34 @@ module.exports = {
     // 'react/prefer-es6-class': ['error', 'always'],
     // // Enforce stateless React Components to be written as a pure function
     // 'react/prefer-stateless-function': ['error', { ignorePureComponents: true }],
-    // // Prevent missing props validation in a React component definition
-    // 'react/prop-types': 'off',
+    // Prevent missing props validation in a React component definition
+    'react/prop-types': 'off',
     // // Prevent missing React when using JSX
     // 'react/react-in-jsx-scope': 'error',
     // // Enforce a defaultProps definition for every prop that is not a required prop
     // 'react/require-default-props': 'off',
-    // // Enforce React components to have a shouldComponentUpdate method
-    // 'react/require-optimization': 'error',
+    // Enforce React components to have a shouldComponentUpdate method
+    'react/require-optimization': 'error',
     // // Enforce ES6 class for returning value in render function
     // 'react/require-render-return': 'error',
     // // Prevent extra closing tags for components without children (fixable)
     // 'react/self-closing-comp': 'error',
-    // // Enforce component methods order
-    // 'react/sort-comp': [
-    //   'error',
-    //   {
-    //     order: [
-    //       'static-methods',
-    //       'lifecycle',
-    //       '/^on.+$/',
-    //       'getters',
-    //       'setters',
-    //       'everything-else',
-    //       '/^render.+$/',
-    //       'render'
-    //     ]
-    //   }
-    // ],
+    // Enforce component methods order
+    'react/sort-comp': [
+      'error',
+      {
+        order: [
+          'static-methods',
+          'lifecycle',
+          '/^on.+$/',
+          'getters',
+          'setters',
+          'everything-else',
+          '/^render.+$/',
+          'render'
+        ]
+      }
+    ],
     // // Enforce propTypes declarations alphabetical sorting
     // 'react/sort-prop-types': 'off',
     // // Enforce style prop value being an object
@@ -132,14 +132,14 @@ module.exports = {
     // 'react/jsx-handler-names': 'off',
     // Validate JSX indentation (fixable)
     'react/jsx-indent': ['error', 2],
-    // // Validate props indentation in JSX
-    // 'react/jsx-indent-props': ['error', 2],
+    // Validate props indentation in JSX
+    'react/jsx-indent-props': ['error', 2],
     // // Validate JSX has key prop when in array or iterator
     // 'react/jsx-key': 'error',
     // Validate JSX maximum depth
     'react/jsx-max-depth': 'off',
     // Limit maximum of props on a single line in JSX
-    'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }]
+    'react/jsx-max-props-per-line': ['error', { maximum: 1, when: 'multiline' }],
     // // Prevent usage of .bind() and arrow functions in JSX props
     // 'react/jsx-no-bind': [
     //   'error',
@@ -161,8 +161,8 @@ module.exports = {
     // 'react/jsx-curly-brace-presence': 'off',
     // // Enforce PascalCase for user-defined JSX components
     // 'react/jsx-pascal-case': ['error', { allowAllCaps: true }],
-    // // Enforce props alphabetical sorting (fixable)
-    // 'react/jsx-sort-props': 'off',
+    // TODO: Enforce props alphabetical sorting (fixable)
+    'react/jsx-sort-props': 'warn',
     // // Validate spacing before closing bracket in JSX (fixable)
     // // Deprecation
     // 'react/jsx-space-before-closing': 'off',
@@ -171,10 +171,10 @@ module.exports = {
     //   'error',
     //   { closingSlash: 'never', beforeSelfClosing: 'always', afterOpening: 'never' }
     // ],
-    // // Prevent React to be incorrectly marked as unused
-    // 'react/jsx-uses-react': 'error',
-    // // Prevent variables used in JSX to be incorrectly marked as unused
-    // 'react/jsx-uses-vars': 'error',
+    // Prevent React to be incorrectly marked as unused
+    'react/jsx-uses-react': 'error',
+    // Prevent variables used in JSX to be incorrectly marked as unused
+    'react/jsx-uses-vars': 'error'
     // // Prevent missing parentheses around multilines JSX
     // 'react/jsx-wrap-multilines': [
     //   'error',

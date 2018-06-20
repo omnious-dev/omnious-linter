@@ -62,7 +62,8 @@ module.exports = {
     // NOTE: deprecated
     // 'no-missing-visibility-modifiers': true,
     // Do not declare multiline strings
-    'no-multiline-string': true,
+    // NOTE: Disabled because styled-components uses multiline strings
+    'no-multiline-string': false,
     // NOTE: deprecated
     // 'no-multiple-var-decl': true,
     // Do not use octal literals or escaped octal sequences
