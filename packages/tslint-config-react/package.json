@@ -1,6 +1,6 @@
 {
   "name": "@omnious/tslint-config-react",
-  "version": "0.0.2-rc7",
+  "version": "0.0.2-rc.0",
   "description": "TSLint sharable config for the Omnious TypeScript React projects",
   "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/tslint-config-react",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
@@ -31,7 +31,7 @@
     "release": "lerna publish"
   },
   "dependencies": {
-    "@omnious/tslint-config": "^0.0.2-rc6"
+    "@omnious/tslint-config": "^0.0.2-rc.0"
   },
   "peerDependencies": {
     "tslint-react": "^3.5.1"
