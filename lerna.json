@@ -5,5 +5,8 @@
   "version": "independent",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "packages": [
+    "packages/*"
+  ]
 }

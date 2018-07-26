@@ -1,6 +1,6 @@
 {
   "name": "@omnious/eslint-config",
-  "version": "0.0.2-rc.0",
+  "version": "0.1.0",
   "description": "ESLint shareable config for the Omnious JavaScript style guide",
   "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
@@ -17,7 +17,14 @@
   ],
   "license": "MIT",
   "repository": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config",
-  "keywords": ["omnious", "javascript", "styleguide", "eslint", "eslintconfig", "config"],
+  "keywords": [
+    "omnious",
+    "javascript",
+    "styleguide",
+    "eslint",
+    "eslintconfig",
+    "config"
+  ],
   "engines": {
     "node": ">= 8.10.0"
   },
