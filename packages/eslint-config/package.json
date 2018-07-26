@@ -4,7 +4,7 @@
   "description": "ESLint shareable config for the Omnious JavaScript style guide",
   "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
-  "contributors": [
+  "maintainers": [
     {
       "name": "Claud D. Park",
       "email": "posquit0.bj@gmail.com",
@@ -17,16 +17,9 @@
   ],
   "license": "MIT",
   "repository": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config",
-  "keywords": [
-    "omnious",
-    "javascript",
-    "styleguide",
-    "eslint",
-    "eslintconfig",
-    "config"
-  ],
+  "keywords": ["omnious", "javascript", "styleguide", "eslint", "eslintconfig", "config"],
   "engines": {
-    "node": ">= 8.9.4"
+    "node": ">= 8.10.0"
   },
   "main": "index.js",
   "scripts": {
@@ -34,6 +27,6 @@
     "test": "node test/test.js"
   },
   "peerDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^5.2.0"
   }
 }
