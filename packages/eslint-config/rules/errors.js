@@ -36,7 +36,11 @@ module.exports = {
     // Disallow unnecessary boolean casts
     'no-extra-boolean-cast': 'error',
     // Disallow unnecessary parentheses
-    'no-extra-parens': ['error', 'all', { ignoreJSX: 'multi-line' }],
+    'no-extra-parens': [
+      'error',
+      'all',
+      { nestedBinaryExpressions: false, ignoreJSX: 'multi-line' }
+    ],
     // Disallow unreachable code
     'no-unreachable': 'error',
     // TODO: Research later

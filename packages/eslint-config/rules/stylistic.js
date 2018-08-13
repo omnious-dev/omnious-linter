@@ -103,7 +103,7 @@ module.exports = {
     // Disallow ternary operators
     'no-ternary': 'off',
     // Disallow trailing whitespace at the end of lines
-    'no-trailing-spaces': ['error', { skipBlankLines: false, ignoreComments: false }],
+    'no-trailing-spaces': ['error', { skipBlankLines: true, ignoreComments: true }],
     // Disallow dangling underscores in identifiers
     'no-underscore-dangle': ['error', { enforceInMethodNames: true }],
     // Disallow ternary operators when simpler alternatives exist
