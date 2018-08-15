@@ -1,10 +1,10 @@
 {
   "name": "@omnious/eslint-config-react",
-  "version": "0.0.2-rc5",
+  "version": "0.1.0",
   "description": "ESLint shareable config for the Omnious JavaScript React projects",
   "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config-react",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
-  "contributors": [
+  "maintainers": [
     {
       "name": "Claud D. Park",
       "email": "posquit0.bj@gmail.com",
@@ -28,17 +28,17 @@
     "jsx"
   ],
   "engines": {
-    "node": ">= 8.9.4"
+    "node": ">= 8.10.0"
   },
   "main": "index.js",
   "scripts": {
     "lint": "eslint ."
   },
   "dependencies": {
-    "@omnious/eslint-config": "^0.0.2-rc4"
+    "@omnious/eslint-config": "^0.1.0"
   },
   "peerDependencies": {
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.5.1"
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0"
   }
 }
