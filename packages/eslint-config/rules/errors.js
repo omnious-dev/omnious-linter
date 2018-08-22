@@ -2,9 +2,6 @@
 
 module.exports = {
   rules: {
-    /**
-     * Possible Errors
-     */
     // Disallow infinite `for` loop
     'for-direction': 'error',
     // Enforce a return statement is present in getters

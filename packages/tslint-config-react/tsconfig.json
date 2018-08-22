@@ -1,9 +1,0 @@
-{
-  "include": ["examples/**/*"],
-  "exclude": ["node_modules"],
-  "compilerOptions": {
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
-  },
-  "compileOnSave": false
-}
