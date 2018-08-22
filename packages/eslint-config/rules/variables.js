@@ -2,9 +2,6 @@
 
 module.exports = {
   rules: {
-    /**
-     * Variables
-     */
     // Disallow `catch` clause parameters from shadowing variables
     'no-catch-shadow': 'error',
     // Disallow deleting variables
@@ -18,6 +15,13 @@ module.exports = {
     // Disallow the use of `undefined` as an identifier
     'no-undefined': 'error',
     // Disallow Unused Variables
-    'no-unused-vars': ['error', { vars: 'all', args: 'all', caughtErrors: 'all' }]
+    'no-unused-vars': [
+      'error',
+      {
+        vars: 'all',
+        args: 'all',
+        caughtErrors: 'all'
+      }
+    ]
   }
 };
