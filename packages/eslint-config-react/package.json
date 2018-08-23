@@ -1,6 +1,6 @@
 {
   "name": "@omnious/eslint-config-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "ESLint shareable config for the Omnious JavaScript React projects",
   "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config-react",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
@@ -35,7 +35,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@omnious/eslint-config": "^0.1.0"
+    "@omnious/eslint-config": "^0.1.1"
   },
   "peerDependencies": {
     "eslint-plugin-jsx-a11y": "^6.1.1",
