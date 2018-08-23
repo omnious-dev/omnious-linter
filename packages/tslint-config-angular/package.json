@@ -32,13 +32,13 @@
     "@omnious/tslint-config": "^0.1.0"
   },
   "peerDependencies": {
-    "@angular/common": "^5.2.9",
-    "@angular/compiler": "^5.2.9",
-    "@angular/core": "^5.2.9",
-    "@angular/platform-browser": "^5.2.9",
-    "@angular/platform-browser-dynamic": "^5.2.9",
-    "rxjs": "^5.5.8",
-    "tslint-angular": "^1.1.1",
+    "@angular/common": "^6.1.3",
+    "@angular/compiler": "^6.1.3",
+    "@angular/core": "^6.1.3",
+    "@angular/platform-browser": "^6.1.3",
+    "@angular/platform-browser-dynamic": "^6.1.3",
+    "rxjs": "^6.2.2",
+    "tslint-angular": "^1.1.2",
     "zone.js": "^0.8.26"
   }
 }

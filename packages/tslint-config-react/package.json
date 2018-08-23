@@ -27,13 +27,12 @@
   },
   "main": "index.js",
   "scripts": {
-    "lint": "tslint -p .",
-    "release": "lerna publish"
+    "lint": "tslint -p ."
   },
   "dependencies": {
     "@omnious/tslint-config": "^0.1.0"
   },
   "peerDependencies": {
-    "tslint-react": "^3.5.1"
+    "tslint-react": "^3.6.0"
   }
 }
