@@ -22,7 +22,7 @@
     "prettier": "1.14.2",
     "react": "16.4.2",
     "rxjs": "6.2.2",
-    "stylelint": "9.5.0",
+    "stylelint": "9.9.0",
     "stylelint-no-unsupported-browser-features": "3.0.1",
     "stylelint-scss": "3.3.0",
     "stylelint-selector-bem-pattern": "2.0.0",
