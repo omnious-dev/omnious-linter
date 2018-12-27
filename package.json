@@ -13,7 +13,7 @@
     "@angular/core": "6.1.10",
     "@angular/platform-browser": "6.1.10",
     "@angular/platform-browser-dynamic": "6.1.10",
-    "eslint": "5.10.0",
+    "eslint": "5.11.1",
     "eslint-plugin-angular": "3.3.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
