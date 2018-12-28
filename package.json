@@ -1,37 +1,35 @@
 {
-  "name": "omnious-linter",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Code style guide configs for Omnious.",
-  "license": "MIT",
-  "workspaces": [
-    "packages/*"
-  ],
+  "dependencies": {
+    "@angular/common": "7.1.4",
+    "@angular/compiler": "7.1.4",
+    "@angular/core": "7.1.4",
+    "@angular/platform-browser": "7.1.4",
+    "@angular/platform-browser-dynamic": "7.1.4",
+    "react": "16.7.0",
+    "rxjs": "6.3.3",
+    "zone.js": "0.8.26"
+  },
   "devDependencies": {
-    "@angular/common": "6.1.10",
-    "@angular/compiler": "6.1.10",
-    "@angular/core": "6.1.10",
-    "@angular/platform-browser": "6.1.10",
-    "@angular/platform-browser-dynamic": "6.1.10",
-    "eslint": "5.10.0",
-    "eslint-plugin-angular": "3.3.0",
+    "eslint": "5.11.1",
+    "eslint-plugin-angular": "4.0.0",
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-react": "7.11.1",
     "npm-run-all": "4.1.5",
-    "prettier": "1.14.2",
-    "react": "16.4.2",
-    "rxjs": "6.2.2",
-    "stylelint": "9.5.0",
-    "stylelint-no-unsupported-browser-features": "3.0.1",
-    "stylelint-scss": "3.3.0",
+    "prettier": "1.15.3",
+    "stylelint": "9.9.0",
+    "stylelint-no-unsupported-browser-features": "3.0.2",
+    "stylelint-scss": "3.4.4",
     "stylelint-selector-bem-pattern": "2.0.0",
-    "tslint": "5.11.0",
+    "tslint": "5.12.0",
     "tslint-angular": "1.1.2",
     "tslint-eslint-rules": "5.4.0",
-    "tslint-microsoft-contrib": "5.2.0",
+    "tslint-microsoft-contrib": "6.0.0",
     "tslint-react": "3.6.0",
-    "typescript": "3.0.1",
-    "zone.js": "0.8.26"
-  }
+    "typescript": "3.2.2"
+  },
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ]
 }
