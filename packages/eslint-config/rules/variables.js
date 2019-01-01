@@ -2,25 +2,57 @@
 
 module.exports = {
   rules: {
-    // Disallow `catch` clause parameters from shadowing variables
-    'no-catch-shadow': 'error',
-    // Disallow deleting variables
+    'init-declarations': [
+      'error',
+      'never',
+      {
+        ignoreForLoopInit: true
+      }
+    ],
     'no-delete-var': 'error',
-    // Disallow labels that share a name with a variable
     'no-label-var': 'error',
-    // Disallow the use of undeclared variables
-    'no-undef': 'error',
-    // Disallow initializing variables to `undefined`
+    'no-restricted-globals': [
+      'error',
+      {
+        message: 'Use local parameter instead.',
+        name: 'event'
+      }
+    ],
+    'no-shadow': [
+      'error',
+      {
+        allow: [],
+        builtinGlobals: false,
+        hoist: 'functions'
+      }
+    ],
+    'no-shadow-restricted-names': 'error',
+    'no-undef': [
+      'error',
+      {
+        typeof: false
+      }
+    ],
     'no-undef-init': 'error',
-    // Disallow the use of `undefined` as an identifier
     'no-undefined': 'error',
-    // Disallow Unused Variables
     'no-unused-vars': [
       'error',
       {
+        args: 'after-used',
+        argsIgnorePattern: '',
+        caughtErrors: 'none',
+        caughtErrorsIgnorePattern: '',
+        ignoreRestSiblings: false,
         vars: 'all',
-        args: 'all',
-        caughtErrors: 'all'
+        varsIgnorePattern: ''
+      }
+    ],
+    'no-use-before-define': [
+      'error',
+      {
+        classes: true,
+        functions: true,
+        variables: true
       }
     ]
   }

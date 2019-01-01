@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   rules: {
     // Require parens in arrow function arguments
