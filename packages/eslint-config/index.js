@@ -1,14 +1,12 @@
-'use strict';
-
 module.exports = {
   extends: [
-    './rules/errors',
-    './rules/best',
-    './rules/strict',
-    './rules/variables',
-    './rules/node',
-    './rules/stylistic',
-    './rules/es6'
+    './rules/bestPractices',
+    './rules/ecmaScript6',
+    './rules/nodejsAndCommonjs',
+    './rules/possibleErrors',
+    './rules/strictMode',
+    './rules/stylisticIssues',
+    './rules/variables'
   ].map(require.resolve),
   parserOptions: {
     ecmaVersion: 2018
