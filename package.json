@@ -23,7 +23,7 @@
     "prettier": "1.15.3",
     "stylelint": "9.9.0",
     "stylelint-no-unsupported-browser-features": "3.0.2",
-    "stylelint-scss": "3.4.4",
+    "stylelint-scss": "3.5.1",
     "stylelint-selector-bem-pattern": "2.0.0",
     "tslint": "5.12.0",
     "tslint-angular": "1.1.2",
