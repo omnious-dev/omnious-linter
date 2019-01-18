@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config" title="ESLint Config Omnious">
+  <a href="https://github.com/omnious/omnious-linter/tree/master/packages/eslint-config" title="ESLint Config Omnious">
     <img alt="ESLint Config Omnious" src="https://raw.githubusercontent.com/omnious-dev/i/master/omnious-logo.png" width="240px" />
   </a>
   <br />
