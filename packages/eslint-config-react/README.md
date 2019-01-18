@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config-react" title="ESLint Config Omnious React">
+  <a href="https://github.com/omnious/omnious-linter/tree/master/packages/eslint-config-react" title="ESLint Config Omnious React">
     <img alt="ESLint Config Omnious React" src="https://raw.githubusercontent.com/omnious-dev/i/master/omnious-logo.png" width="240px" />
   </a>
   <br />
@@ -70,4 +70,4 @@ To use Omnious style in conjunction with ESLint's recommended rule set, extend t
 
 ## License
 
-[MIT](https://github.com/omnious-dev/omnious-linter/blob/master/LICENSE) © [Omnious](https://www.omnious.com)
+[MIT](https://github.com/omnious/omnious-linter/blob/master/LICENSE) © [Omnious](https://www.omnious.com)

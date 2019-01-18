@@ -2,4 +2,4 @@
 
 ## License
 
-[MIT](https://github.com/omnious-dev/omnious-linter/blob/master/LICENSE) © [Omnious](https://www.omnious.com)
+[MIT](https://github.com/omnious/omnious-linter/blob/master/LICENSE) © [Omnious](https://www.omnious.com)

@@ -2,7 +2,7 @@
   "name": "@omnious/stylelint-config",
   "version": "0.1.1",
   "description": "Stylelint sharable config for the Omnious css style guide",
-  "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/stylelint-config",
+  "homepage": "https://github.com/omnious/omnious-linter/tree/master/packages/stylelint-config",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
   "contributors": [
     {
@@ -11,7 +11,7 @@
     }
   ],
   "license": "MIT",
-  "repository": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/stylelint-config",
+  "repository": "https://github.com/omnious/omnious-linter/tree/master/packages/stylelint-config",
   "keywords": [
     "omnious",
     "css",

@@ -10,10 +10,10 @@
     "eslintconfig",
     "config"
   ],
-  "homepage": "https://github.com/omnious-dev/omnious-linter/tree/master/packages/eslint-config",
+  "homepage": "https://github.com/omnious/omnious-linter/tree/master/packages/eslint-config",
   "bugs": {
     "email": "dev@omnious.com",
-    "url": "https://github.com/omnious-dev/omnious-linter/issues"
+    "url": "https://github.com/omnious/omnious-linter/issues"
   },
   "license": "MIT",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
@@ -24,7 +24,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/omnious-dev/omnious-linter.git"
+    "url": "https://github.com/omnious/omnious-linter.git"
   },
   "scripts": {
     "lint": "eslint .",
