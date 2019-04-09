@@ -5,13 +5,7 @@ module.exports = {
     'handle-callback-err': ['error', '^(err|error)$'],
     'no-buffer-constructor': 'error',
     'no-mixed-requires': 'error',
-    'no-new-require': [
-      'error',
-      {
-        allowCall: false,
-        grouping: false
-      }
-    ],
+    'no-new-require': 'error',
     'no-path-concat': 'error',
     'no-process-env': 'warn',
     'no-process-exit': 'error',
