@@ -1,5 +1,7 @@
 module.exports = {
-  extends: ['./rules/bem', './rules/browser', './rules/scss'],
+  extends: ['./rules/bem', './rules/browser', './rules/scss', './rules/stylistic-issues'].map(
+    require.resolve
+  ),
   rules: {
     /*
      * Possible errors
@@ -70,8 +72,6 @@ module.exports = {
     'function-url-scheme-whitelist': null,
     // Specify a whitelist of allowed functions
     'function-whitelist': null,
-    // Limit the number of decimal places allowed in numbers.
-    'number-max-precision': 3,
     // Specify the minimum number of milliseconds for time values.
     'time-min-milliseconds': 10,
     // Specify a blacklist of disallowed units.
@@ -173,10 +173,6 @@ module.exports = {
     /*
      * Stylistic issues
      */
-    // Specify lowercase or uppercase for hex colors.
-    'color-hex-case': 'lower',
-    // Specify short or long notation for hex colors.
-    'color-hex-length': 'short',
     // Specify whether or not quotation marks should be used around font family names.
     'font-family-name-quotes': 'always-unless-keyword',
     // Require numeric or named (where possible) font-weight values. Also, when named values are expected, require only valid names.

@@ -1,8 +1,10 @@
+'use strict';
+
 module.exports = {
   extends: [
     './rules/bestPractices',
     './rules/ecmaScript6',
-    './rules/nodejsAndCommonjs',
+    './rules/nodejs-and-commonjs',
     './rules/possibleErrors',
     './rules/strictMode',
     './rules/stylisticIssues',
