@@ -1,6 +1,6 @@
 {
   "name": "@omnious/tslint-config",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "TSLint sharable config for the Omnious TypeScript style guide",
   "homepage": "https://github.com/omnious/omnious-linter/tree/master/packages/tslint-config",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",

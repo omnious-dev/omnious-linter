@@ -1,6 +1,6 @@
 {
   "name": "@omnious/tslint-config-angular",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "TSLint sharable config for the Omnious TypeScript Angular projects",
   "homepage": "https://github.com/omnious/omnious-linter/tree/master/packages/tslint-config-angular",
   "author": "Omnious Dev Team <dev@omnious.com> (https://www.omnious.com)",
@@ -29,7 +29,7 @@
     "lint": "tslint -p ."
   },
   "dependencies": {
-    "@omnious/tslint-config": "^0.1.1"
+    "@omnious/tslint-config": "^0.1.2"
   },
   "peerDependencies": {
     "@angular/common": "^6.1.3",
