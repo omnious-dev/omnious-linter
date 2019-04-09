@@ -40,5 +40,6 @@
     "rxjs": "^6.2.2",
     "tslint-angular": "^1.1.2",
     "zone.js": "^0.8.26"
-  }
+  },
+  "private": true
 }
